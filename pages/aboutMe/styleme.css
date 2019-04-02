@@ -54,7 +54,7 @@ a {
     text-decoration: none;
 }
 
-a#moreAnchor {
+label#moreAnchor {
     text-decoration: underline;
     cursor: pointer;
     color: #d0d0d0;
