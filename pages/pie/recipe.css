@@ -95,9 +95,10 @@ div.copyRightParent {
 }
 
 p.copyRightText {
+    font-size: .8em;
     text-align: right;
     font-family: monospace;
-    width: 19vw;
+    width: 16vw;
 }
 
 div.validators {
