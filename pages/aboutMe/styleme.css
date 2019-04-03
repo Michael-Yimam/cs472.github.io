@@ -8,6 +8,11 @@ body{
     color: #dfdfdf;
 }
 
+.bodyText {
+    color: #d0d0d0;
+    font-family: ebrima, sans-serif;
+}
+
 div.title-parent {
     background-color: rgba(46, 46, 46, .6);
     top: 0;
@@ -30,19 +35,35 @@ div.myStory-parent {
 p#myStory {
     font-family: ebrima, sans-serif;
     font-weight: lighter;
-    color: #d0d0d0;
-    width: 40vw;
+    width: 60vw;
     margin-left: auto;
     margin-right: auto;
     text-justify: inter-character;
     text-align: justify;
 }
 
+p#myStory:first-child:first-letter {
+    float: left;
+    font-size: 6em;
+    font-weight: bolder;
+    line-height: 1em;
+    padding-right: .2em;
+    padding-bottom: 0em;
+}
+
+p#theRestOfTheStory:first-child:first-letter{
+    float: left;
+    font-size: 6em;
+    font-weight: bolder;
+    line-height: 1em;
+    padding-right: .2em;
+    padding-bottom: 0em;
+}
+
 p#theRestOfTheStory {
     font-family: ebrima, sans-serif;
     font-weight: lighter;
-    color: #d0d0d0;
-    width: 40vw;
+    width: 60vw;
     margin-left: auto;
     margin-right: auto;
     text-justify: inter-character;
@@ -55,17 +76,183 @@ a {
 }
 
 label#moreAnchor {
+    font-family: ebrima, sans-serif;
+    font-weight: lighter;
     text-decoration: underline;
+    text-align: left;
     cursor: pointer;
-    color: #d0d0d0;
+    display: block;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-a#moreAnchor:target ~ p#theRestOfTheStory {
+label#moreAnchor:hover {
+    text-decoration: none;
+}
+
+input#moreStoryInput {
+    position: absolute;
+    left: -999%;
+    top: -999%;
+}
+
+input#moreStoryInput:checked ~ p#theRestOfTheStory {
     display: block;
 }
 
-label {
-    display: block;
-    margin: 20px 0 0;
-    border-bottom: 1px solid green;
+
+
+.titles {
+ font-family: "Century Gothic", sans-serif;
+}
+
+.courseCode {
+    font-weight: bold;
+
+}
+
+div.contentContainer {
+    margin-top: 5vh;
+}
+
+div.contentContainer .wrapper {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.contentContainer .wrapper ul {
+    margin-left: 3vw;
+    margin-top: 1vh;
+}
+
+div.contentContainer .wrapper ol {
+    margin-left: 3vw;
+    margin-top: 1vh;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ol li a.linkToFilm {
+    color: coral;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+dd {
+    font-size: .9em;
+    font-family: "Courier New";
+    text-align: justify;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: .4em;
+    padding: 1em;
+}
+
+ol > li > dl {
+
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s, visibility 1s, opacity ease-out;
+    overflow: hidden;
+}
+
+ol > li:hover dl {
+    visibility: visible;
+    transition: visibility 1s, ease-in;
+    height: auto;
+    opacity: 1;
+}
+
+span.tagLineSpecial {
+    color: crimson;
+}
+
+span.directorName {
+    font-size: 3em;
+}
+
+img.directorPhoto {
+    height: 9em;
+    border: .3em solid #d0d0d0;
+    border-radius: .5em;
+}
+
+div.moodImageWrapper {
+    padding-top: 1em;
+}
+
+img.moodImages {
+    height: 10em;
+    border: .4em solid #ffffff;
+    border-radius: .1em;
+    box-shadow: .2em .2em .4em rgba(0, 0, 0, 1);
+}
+
+img#myHappy1 {
+    transform: rotate(20deg);
+}
+
+
+img#myHappy3 {
+    position: absolute;
+    z-index: 10;
+    left: 20em;
+    margin-top: 4em;
+    height: 9vw;
+    transform: rotate(-15deg);
+}
+
+img#mySad1 {
+    transform: rotate(-20deg);
+}
+
+img#mySad2 {
+    position: absolute;
+    z-index: 10;
+    margin-top: 7em;
+    left: 40em;
+    transform: rotate(12deg);
+}
+
+img#mySad3 {
+    position: absolute;
+    left: 48em;
+    transform: rotate(-5deg);
+}
+
+div.footer {
+    margin-top: 12em;
+}
+
+
+
+span.moodText {
+    font-size: 5em;
+    position: absolute;
+}
+
+span#happyText {
+    font-family: "Courier New";
+    font-weight: bolder;
+    z-index: 122;
+    transform: rotate(-8deg);
+
+}
+
+span#sadText {
+    font-family: serif;
+    font-weight: bolder;
+    z-index: 1;
+    left: 11.4em;
+    opacity: .6;
+}
+
+div.myNeighbors {
+    margin-top: 8em;
 }
