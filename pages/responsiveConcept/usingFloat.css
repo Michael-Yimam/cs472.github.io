@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 1em;
+}
+
+/* applies to any screen 600px or larger -- favor this */
+@media only screen and (min-width: 300px){
+
+    header.container {
+        text-align: center;
+        background-color: lightskyblue;
+    }
+
+    .headers {
+        font-weight: bold;
+    }
+
+    nav.container {
+        background-color: #003333;
+        padding-left: 0em;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav ul li{
+        display: inline;
+        padding: .6em;
+        background-color: #003333;
+        border: .08em solid black;
+        color: white;
+    }
+}
+
