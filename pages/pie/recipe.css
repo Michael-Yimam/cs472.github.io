@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, serif;
+    background-image: url("../../resources/image/pie/backgroundImage.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+}
+
+a {
+    color: #A4A400;
+}
+
+.contentContainer {
+    width: 90vw;
+    margin: 1vh auto 2vh auto;
+}
+
+.headerContainer {
+    color: #A4A400;
+    //background-color: #f0f0f0;
+    font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+    text-align: left;
+    text-decoration: underline;
+    padding: 0vh 0vh 1vh 0vh;
+
+}
+
+.mainTitle {
+    text-align: center;
+    font-size: 22pt;
+}
+
+.headers {
+    letter-spacing: .25em;
+    background-color: #f0f0f0;
+    display:inline;
+    padding: 0vh 1vh 1vh 1vh;
+}
+
+ul.miniDescription {
+    margin: 1vh 0vh 1vh;
+    list-style: none;
+}
+
+hr {
+    margin: 1vh 0vh 1vh;
+}
+
+ul {
+    list-style-image: url('../../resources/image/pie/bulletImage.gif');
+}
+
+ul.ingredientDescription {
+    margin: 1vh 0vh 1vh 4vh;
+}
+
+span.abbriviation {
+    text-decoration: underline dashed;
+}
+
+ol.directionsList {
+    margin: 1vh 0vh 1vh 4vh;
+}
+
+ol.directionsList .listHeader {
+    font-weight: bolder;
+}
+
+ol.directionsList ul {
+    margin-left: 4vh;
+}
+
+div.commentWrapper {
+    width: 80vw;
+    background-color: #ffffa8;
+    font-style: italic;
+    margin: 1.5vh 0 1.5vh;
+}
+
+p.userCommentPar .commentEmphesis {
+    font-weight: bold;
+}
+
+div.copyRightParent {
+    width: 30vw;
+    margin-left: 0;
+}
+
+p.copyRightText {
+    text-align: right;
+    font-family: monospace;
+    width: 19vw;
+}
+
+div.validators {
+    display: inline-block;
+}
