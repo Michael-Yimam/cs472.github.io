@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 1em;
+}
+
+div.columnWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.columns {
+    height: 30vw;
+    width: 33.3%;
+}
+
+div#column1 {
+    background-color: #b8b8b8;
+}
+
+div#column2 {
+    background-color: #d0d0d0;
+}
+
+div#column3 {
+    background-color: #e8e8e8;
+}
+
+footer.container {
+    text-align: center;
+    background-color: #005442;
+    color: white;
+}
+/* applies to any screen 600px or larger -- favor this */
+@media only screen and (min-width: 300px) {
+
+    header.container {
+        text-align: center;
+        background-color: lightskyblue;
+    }
+
+    .headers {
+        font-weight: bold;
+    }
+
+    nav.container {
+        background-color: #005442;
+        padding-left: 0em;
+        padding-top: 0em;
+        padding-bottom: 0em;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: .6em;
+        background-color: #005442;
+        border: .08em solid black;
+        color: white;
+    }
+
+    .columns:nth-of-type(2) { order: 3; }
+
+    div#column1 {
+        width: 50%;
+    }
+
+    div#column2 {
+        width: 100%;
+    }
+
+    div#column3 {
+        width: 50%;
+    }
+}
+
+
+/* applies to any screen 600px or larger -- favor this */
+@media only screen and (min-width: 600px) {
+
+    .columns:nth-of-type(3) {
+        order: 3;
+    }
+
+    div#column1 {
+        width: 33.33%;
+    }
+
+    div#column2 {
+        width: 33.33%;
+    }
+
+    div#column3 {
+        width: 33.33%;
+    }
+
+}
