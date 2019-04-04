@@ -24,8 +24,10 @@ body {
     }
 
     nav.container {
-        background-color: #003333;
+        background-color: #005442;
         padding-left: 0em;
+        padding-top: 0em;
+        padding-bottom: 0em;
     }
 
     nav ul {
@@ -33,11 +35,66 @@ body {
     }
 
     nav ul li{
-        display: inline;
+        display: inline-block;
         padding: .6em;
-        background-color: #003333;
+        background-color: #005442;
         border: .08em solid black;
         color: white;
     }
+
+    footer.container {
+        text-align: center;
+        background-color: #005442;
+        color: white;
+        clear: right;
+    }
+
+    div.columns {
+        height: 30vw;
+        width: 33%;
+    }
+
+    div#column1 {
+        background-color: #b8b8b8;
+        float: left;
+        width: 50%;
+    }
+
+    div#column2 {
+        background-color: #d0d0d0;
+        float: inherit;
+        width: 100%;
+        clear: both;
+    }
+
+    div#column3 {
+        background-color: #e8e8e8;
+        float: right;
+        width: 50%;
+        clear: both;
+        margin-top: -60vw;
+    }
 }
 
+/* applies to any screen 600px or larger -- favor this */
+@media only screen and (min-width: 600px){
+
+    div#column1 {
+        float: left;
+        width: 33.33%;
+        clear: none;
+    }
+
+    div#column2 {
+        float: left;
+        width: 33.33%;
+        clear: none;
+    }
+
+    div#column3 {
+        float: right;
+        width: 33.33%;
+        margin-top: 0;
+        clear: none;
+    }
+}
