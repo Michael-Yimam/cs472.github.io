@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px 10px;
+    font-weight: bold;
+}
+
+input{
+    margin-left: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 25px;
+    border: 1px solid grey;
+}
+
+select {
+    margin-left: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 25px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    width: 230px;
+    display: block;
+}
+
+.buttons {
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 0;
+    height: 33px;
+    color: white;
+    background-color: darkgray;
+}
+
+.buttons:nth-of-type(1) {
+    margin-right: 4px;
+}
+
+.buttons:nth-of-type(2) {
+    margin-left: 4px;
+}
+
+table {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 80%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table tr {
+    border: 1px solid black;
+}
+
+table tr th {
+    padding: 5px;
+    border: 1px solid black
+}
+
+table tr td {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+tr:nth-of-type(1) {
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+}
+
+#banner {
+    margin: 10px 0 10px 10px;
+    width: 80%;
+    height: 2vh;
+    background-color: lightgrey;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="taskList.css" type="text/css" rel="stylesheet">
+    <title>Task List</title>
+</head>
+<body>
+
+    <form method="post">
+        <label>Task</label>
+        <input type="text" size="50" placeholder="Enter the task ...">
+
+        <label>Required by</label>
+        <input type="date">
+
+        <label>Category</label>
+        <select>
+            <option value="personal" selected>Personal</option>
+            <option value="work">Work</option>
+        </select>
+
+        <input type="submit" value="Save task" class="buttons">
+        <input type="reset" value="Clear task" class="buttons">
+    </form>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Due</th>
+            <th>Category</th>
+        </tr>
+        <tr>
+            <td>Return library books</td>
+            <td>2013-10-14</td>
+            <td>Personal</td>
+        </tr>
+        <tr>
+            <td>Perform project demo to stakeholders</td>
+            <td>2013-10-14</td>
+            <td>Work</td>
+        </tr>
+        <tr>
+            <td>Meet friends for dinner</td>
+            <td>2013-10-14</td>
+            <td>Personal</td>
+        </tr>
+    </table>
+
+    <input type="button" value="Add task" class="buttons">
+
+    <div id="banner"> You have 3 tasks.</div>
+</body>
+</html>
