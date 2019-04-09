@@ -2,7 +2,8 @@
 window.addEventListener('load', function(){
    document.getElementsByTagName("input")[0].addEventListener('click', buttonClicked);
    document.getElementById("bling").addEventListener('change', checkboxClicked);
-   document.getElementByTagName("input")[1].addEventListener('click', pigLatin);
+   document.getElementsByTagName("input")[2].addEventListener('click', pigLatin);
+   document.getElementsByTagName("input")[3].addEventListener('click', malkovitch);
 });
 
 function buttonClicked(){
@@ -34,10 +35,48 @@ function checkboxClicked(){
 
 }
 
-function pigLatin(){
+function pigLatin()
+{
+    let textArea = document.getElementById("textArea");
+    let array = textArea.value.split(" ");
+    console.log(array);
+    let x = "";
+
+    for(let k = 0; k < array.length; k++) {
+
+        let n = array[k];
+        let y = "";
+
+        for (var i = 0; i < n.length; i++) {
+            if (notVowel(n[i]))
+                y += n[i];
+            else
+                break;
+        }
+        x += n.substr(i, n.length) + y + "ay ";
+    }
+
+    textArea.value = x;
+}
+
+function malkovitch()
+{
+    let textArea = document.getElementById("textArea");
+    let array = textArea.value.split(" ");
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i].length >= 5) {
+            array[i] = "Malkovich";
+        }
+    }
+    textArea.value = array.join(" ");
+}
+
+function notVowel(y){
 
 
-
+    return y != "a" && y != "e" && y != "i" &&
+           y != "o" && y != "u";
 }
 
 function pixelToPoint(n){
