@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="lab9.css" type="text/css" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="lab9.js"></script>
+    <title>Lab 9 - Input Validation</title>
+</head>
+<body>
+
+    <div id="error"></div>
+    <form action="" method="post">
+
+        <label>Name</label>
+        <input id="name" type="text"><br>
+
+        <label>Street</label>
+        <input id="street" type="text"><br>
+
+        <label>State</label>
+        <select id="state">
+            <option value="ia">Iowa</option>
+            <option value="ph">Philadelphia</option>
+            <option value="Fl">Florida</option>
+            <option value="Il">Illinois</option>
+            <option value="Tx">Texas</option>
+        </select><br>
+
+        <label>Zip Code</label>
+        <input id="zipCode" type="text"><br>
+
+        <label>How many seats?</label>
+        <input id="seats" type="text">
+
+        <fieldset>
+            <legend>Which taxi do you require?</legend>
+            <input id="carRadio" type="radio" name="taxi" value="car"><label for="carRadio">Car</label><br>
+            <input id="vanRadio" type="radio" name="taxi" value="van"><label for="vanRadio">Van</label><br>
+            <input id="tukRadio" type="radio" name="taxi" value="tuk tuk"><label for="tukRadio">Tuk Tuk</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Extras</legend>
+            <input id="babyRadio" type="radio" name="extra" value="baby seat"><label for="babyRadio">Baby Seat</label><br>
+            <input id="wheelChairRadio" type="radio" name="extra" value="wheel chair access"><label for="wheelChairRadio">Wheel Chair Access</label><br>
+            <input id="stockRadio" type="radio" name="extra" value="stock tip"><label for="stockRadio">Stock Tip</label><br>
+        </fieldset>
+
+        <label>Special Instruction</label>
+        <textarea row="30" cols="40"></textarea>
+
+        <input type="submit" value="Submit Booking">
+    </form>
+
+</body>
+</html>
