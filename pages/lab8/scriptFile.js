@@ -75,3 +75,9 @@ function objectCreation(){
     const t = new Person("xing");
     t.teach("wap");
 }
+
+function usingObjectCreate(){
+    const person = {name:""};
+    const t = Object.create(person);
+    t
+}
